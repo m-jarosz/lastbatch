@@ -65,3 +65,10 @@ input {
 .active {
     display: block;
 }
+
+@media (max-width: 600px) {
+    body {
+        background-image: none;
+        background-color: bisque;
+    }
+}
