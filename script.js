@@ -16,7 +16,7 @@ const calculateAmountOfBatches = () => {
     if (currentBatchTime < stopCookingTime) {
         const difference = ((stopCookingTime - currentBatchTime)/1000)/60;
         return (difference / calculateTimeBeetwenBatches()) - (1170/460);
-    }
+    } 
 }
 
 // const calculateLastDrop = () => {
@@ -31,9 +31,13 @@ const calculateNumberOfLasBatch = () => {
     // const timeLastDrop = calculateLastDrop();
     // const timeLastBatch = new Date(timeLastDrop - ((flow * 60) * 1000));
     const lastBatch = parseInt(inputCurrentBatch.value) + amountOfBatches;
-    console.log(lastBatch);
     const answer = document.querySelector("div .js-answer");
-    answer.textContent = Math.round(lastBatch);
+    if (amountOfBatches) {
+        answer.textContent = Math.round(lastBatch);
+    } else {
+        answer.textContent = "Nieprawidłowe wartości czasu";
+        answer.style.fontSize = "40px";
+    }   
     content.classList.add("active");
 } 
 
