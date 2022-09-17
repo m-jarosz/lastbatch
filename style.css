@@ -66,13 +66,8 @@ input {
     display: block;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
     body {
-        background-image: none;
-        background-color: bisque;
-    }
-
-    .currentButchTime, .stopCookingTime {
-        width: 50%;
+        background-image: url(assets/crunchie-mini.jpeg);
     }
 }
