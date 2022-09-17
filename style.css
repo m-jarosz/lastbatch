@@ -73,6 +73,6 @@ input {
 
 @media (max-width: 600px) {
     body {
-        background-image: url(assets/crunchie-mini.jpeg);
+        background-image: url(assets/crunchie-mini.png);
     }
 }
