@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Last Batch</title>
+</head>
+<body>
+    <h1 class="siteTitle">Last Batch</h1>
+    <form class="form js-form">
+        <label>
+            Przepływ <input type="number" class="flow js-flow" step="1" min="500" required>
+        </label>
+        <label>
+            Numer obecnego batcha <input type="number" class="currentBatch js-currentBatch" step="1" min="1" required>
+        </label>
+        <label>
+            Godzina rozpoczęcia naważania <input type="datetime-local" class="currentBatchTime js-currentBatchTime" required>
+        </label>
+        <label>
+            Godzina wyłączenia kuchni <input type="datetime-local" class="stopCookingTime js-stopCookingTime" required>
+        </label>
+        <button class="btn js-btn">Last Batch</button>
+    </form>
+    <div class="contentBox js-contentBox">
+        <span class="answer js-answer">LOREM</span>
+    </div>
+</body>
+</html>
