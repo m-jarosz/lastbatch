@@ -1,5 +1,5 @@
 (() => {
-    const inputFlow = document.querySelector(".js-flow");
+const inputFlow = document.querySelector(".js-flow");
 const inputCurrentBatch = document.querySelector(".js-currentBatch");
 const inputCurrentBatchTime = document.querySelector(".js-currentBatchTime");
 const inputStopCookingTime = document.querySelector(".js-stopCookingTime");
