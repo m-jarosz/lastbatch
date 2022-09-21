@@ -34,7 +34,7 @@ const calculateNumberOfLasBatch = () => {
     const lastBatch = parseInt(inputCurrentBatch.value) + amountOfBatches;
     const answer = document.querySelector("div .js-answer");
     if (amountOfBatches) {
-        answer.textContent = Math.round(lastBatch);
+        answer.textContent = lastBatch; // tymczasowe usunięcie zaokrąglenia Math.round()
     } else {
         answer.textContent = "Nieprawidłowe wartości czasu";
         answer.style.fontSize = "40px";
